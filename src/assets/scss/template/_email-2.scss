@@ -1,0 +1,365 @@
+// VARIABLES
+$color-white: #ffffff;
+$color-text: #162854;
+$color-text-light: #32394E;
+$color-text-accent: #29b6ff;
+$color-bg-gray: #e6e6e6;
+$color-bg-blue: #182b65;
+$color-bg-blue-light: #29b6ff;
+$font-size: 22px;
+$font-size-mob: 18px;
+$line-height: 140%;
+
+// GENERAL
+.e2-title {
+  margin-bottom: 0;
+  font-size: 40px;
+  line-height: 44px;
+  color: $color-text;
+  font-weight: 600;
+  span {
+    color: $color-text-accent;
+  }
+}
+
+// HEADER
+.e2-header {
+  .columns {
+    padding-bottom: 0;
+  }
+}
+.e2-header__logo {
+  display: block;
+  width: 137px;
+  height: 36px;
+}
+.e2-header__btn {
+  display: block;
+  margin-left: auto;
+  padding: 10px 28px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-white;
+  background-color: $color-bg-blue-light;
+  width: max-content;
+  border-radius: 60px;
+  &:hover,
+  &:visited {
+    color: $color-white;
+  }
+}
+
+// PROMO
+.e2-promo {
+  .wrapper-inner {
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: center;
+    color: $color-text-light;
+  }
+}
+.e2-promo__title {
+  margin-bottom: 0;
+  font-size: 50px;
+  line-height: 110%;
+  text-align: center;
+  color: $color-text;
+}
+
+// SOFTWARE
+.e2-software {
+  .wrapper-inner {
+    padding: 20px;
+    font-size: $font-size;
+    line-height: $line-height;
+    background-color: $color-white;
+    border-radius: 24px;
+  }
+}
+.e2-software__img {
+  float: left;
+  margin: 2px;
+  width: 178px;
+}
+.e2-software__clearfix {
+  display: table;
+  clear: both;
+}
+
+// INFO
+.e2-info {
+  .wrapper-inner {
+    padding: 30px;
+    font-size: $font-size;
+    line-height: 140%;
+    font-weight: 300;
+    color: $color-white;
+    background-color: $color-bg-blue;
+    border-radius: 24px;
+  }
+  h2 {
+    color: inherit;
+  }
+}
+.e2-info__btn {
+  display: block;
+  padding: 13px;
+  font-size: 20px;
+  line-height: 170%;
+  font-weight: 600;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-bg-blue-light;
+  border-radius: 12px;
+  &:hover,
+  &:visited {
+    color: $color-white;
+  }
+}
+
+// NETWORK
+.e2-network {
+  h3 {
+    font-size: 25px;
+    line-height: 115%;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+}
+.e2-network__card {
+  .wrapper-inner {
+    padding: 20px;
+    font-size: $font-size;
+    line-height: 130%;
+    color: $color-text;
+    background-color: $color-white;
+    border-radius: 20px;
+  }
+  &--last {
+    .wrapper-inner {
+      color: $color-white;
+      background-color: $color-bg-blue-light;
+    }
+  }
+}
+.e2-network__list {
+  margin-top: 9px;
+}
+.e2-network__tag {
+  float: left;
+  margin: 2px;
+  padding: 0 12px;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 400;
+  color: $color-white;
+  background-color: $color-bg-blue-light;
+  border-radius: 32px;
+  text-wrap: nowrap;
+}
+.e2-network__clearfix {
+  display: table;
+  clear: both;
+}
+
+// NOTIFICATIONS
+.e2-notifications__card {
+  .wrapper-inner {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color-white;
+    background-color: $color-bg-blue;
+    border-radius: 40px;
+  }
+}
+.e2-notifications__col {
+  padding-bottom: 0 !important;
+}
+
+// ACHIEVEMENTS
+.e2-achievements {
+  .wrapper-inner {
+    font-size: $font-size;
+    line-height: 27px;
+  }
+  span {
+    color: $color-text-accent;
+  }
+  .large-6.first {
+    padding-left: 0;
+  }
+  .large-6.last {
+    padding-right: 0;
+  }
+  .columns {
+    padding: 6px;
+  }
+}
+.e2-achievements__card {
+  .wrapper-inner {
+    padding: 32px 3px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: $color-white;
+    background-color: $color-bg-blue-light;
+    border-radius: 24px;
+  }
+}
+.e2-achievements__num {
+  font-size: 40px;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+// CONTACT
+.e2-contact {
+  .wrapper-inner {
+    padding: 30px;
+    background-color: $color-white;
+    border-radius: 30px;
+  }
+  h3 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 600;
+    color: $color-text;
+  }
+  img {
+    display: inline;
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 12px;
+    vertical-align: middle;
+  }
+}
+.e2-contact__link {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-text-light;
+  &:hover,
+  &:visited {
+    color: $color-text-light;
+  }
+}
+.e2-contact__btn {
+  display: block;
+  padding: 17px;
+  font-size: $font-size;
+  line-height: 170%;
+  font-weight: 600;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-bg-blue-light;
+  border-radius: 12px;
+  &:hover,
+  &:visited {
+    color: $color-white;
+  }
+}
+
+// FOOTER
+.e2-footer__link {
+  font-size: 18px;
+  line-height: 23px;
+  color: $color-text;
+  &:hover,
+  &:visited {
+    color: $color-text;
+  }
+}
+.e2-footer__btn {
+  padding: 7px 24px;
+  font-size: 14px;
+  line-height: 170%;
+  color: $color-text;
+  background-color: $color-bg-gray;
+  border-radius: 12px;
+  &:hover,
+  &:visited {
+    color: $color-text;
+  }
+}
+
+
+// MEDIA MOBILE
+@media only screen and (max-width: $global-breakpoint) {
+  /* HEADER */
+  .e2-header__logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* PROMO */
+  .e2-promo .wrapper-inner {
+    font-size: $font-size-mob;
+    text-align: left;
+  }
+  .e2-promo__title {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  /* SOFTWARE */
+  .e2-software .wrapper-inner {
+    font-size: $font-size-mob;
+  }
+
+  /* INFO */
+  .e2-info .wrapper-inner {
+    padding: 20px;
+  }
+  .e2-info__btn {
+    padding: 15px;
+    font-size: 24px;
+  }
+
+  /* NETWORK */
+  .e2-network h3 {
+    font-size: 20px;
+  }
+  .e2-network__card .wrapper-inner {
+    font-size: $font-size-mob;
+  }
+
+  /* NOTIFICATIONS */
+  .e2-notifications__card .wrapper-inner {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: $font-size-mob;
+  }
+
+  /* ACHIEVEMENTS */
+  .e2-achievements .wrapper-inner {
+    font-size: $font-size-mob;
+    line-height: 22px;
+  }
+  .e2-achievements .columns.large-6 {
+    padding: 3px 0 !important;
+  }
+  .e2-achievements__num {
+    font-size: 55px;
+  }
+
+  /* CONTACT */
+  .e2-contact .wrapper-inner {
+    padding: 20px;
+  }
+
+  /* FOOTER */
+  .e2-footer__btn {
+    padding: 13px 60px;
+  }
+}
+@media only screen and (max-width: 428px) {
+  /* SOFTWARE */
+  .e2-software__img {
+    width: 150px !important;
+  }
+}
