@@ -28,18 +28,24 @@ $black: #0a0a0a;
 // $white: #fefefe;
 $white: #ffffff;
 $pre-color: #ff6908;
-// $global-width: 580px;
-$global-width: 600px;
-$global-width-small: 95%;
+// $global-width: 600px;
+$global-width: 610px;
+// $global-width-small: 95%;
+// EMAIL 4
+$global-width-small: 100%;
 $global-gutter: 16px;
 $body-background: $light-gray;
 // $container-background: $white;
-$container-background: transparent;
+// EMAIL 4
+$container-background: $white;
+// $container-background: transparent;
 $global-padding: 16px;
 $global-margin: 16px;
 $global-radius: 3px;
 $global-rounded: 500px;
-$global-breakpoint: $global-width + $global-gutter;
+// $global-breakpoint: $global-width + $global-gutter;
+// EMAIL 4
+$global-breakpoint: $global-width;
 
 // 2. Grid
 // -------
@@ -58,7 +64,6 @@ $block-grid-gutter: $global-gutter;
 // -------------
 
 $global-font-color: $black;
-// $body-font-family: Helvetica, Arial, sans-serif;
 $body-font-family: 'Inter', sans-serif, Arial, 'Helvetica Neue', Helvetica;
 $global-font-weight: normal;
 $header-color: inherit;
