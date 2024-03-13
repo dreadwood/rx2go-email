@@ -109,24 +109,22 @@ $e3-color-bg-blue-light: #29b6ff;
   line-height: 34px;
   font-weight: 600;
   text-align: center;
-  color: $color-white;
+  color: $e3-color-white;
   background-color: $e3-color-bg-blue-light;
   border-radius: 60px;
   &:hover,
   &:visited {
-    color: $color-white;
+    color: $e3-color-white;
   }
 }
 
-// MEDIA MOBILE
+// MEDIA MOBILE (use CSS)
 @media only screen and (max-width: $global-breakpoint) {
   /* GENERAL */
-  .e3-wrp {
-    & > tbody > tr > .wrapper-inner {
-      padding-top: 40px !important;
-      padding-bottom: 30px !important;
-      border-radius: 20px !important;
-    }
+  .e3-wrp > tbody > tr > .wrapper-inner {
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+    border-radius: 20px !important;
   }
   .e3-btn {
     width: 200px !important;
@@ -134,11 +132,9 @@ $e3-color-bg-blue-light: #29b6ff;
   }
 
   /* SOFTWARE */
-  .e3-software {
-    .wrapper-inner {
-      padding-right: 12px !important;
-      padding-left: 12px !important;
-    }
+  .e3-software .wrapper-inner {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
   }
   .e3-software__img {
     width: 186px;
@@ -150,19 +146,15 @@ $e3-color-bg-blue-light: #29b6ff;
   }
 
   /* MAP */
-  .e3-map {
-    .wrapper-inner {
-      padding-right: 12px !important;
-      padding-left: 12px !important;
-    }
+  .e3-map .wrapper-inner {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
   }
 
   /* CONTACT */
-  .e3-contact {
-    .wrapper-inner {
-      padding-right: 12px !important;
-      padding-left: 12px !important;
-    }
+  .e3-contact .wrapper-inner {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
   }
 }
 @media only screen and (max-width: 428px) {
