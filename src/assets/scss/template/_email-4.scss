@@ -263,7 +263,7 @@ $e4-border-color: #f2f2f2;
   .wrapper-inner {
     padding: 42px 48px;
     background-color: $e4-color-white;
-    background-image: url("/assets/img/bg-globes.png");
+    background-image: url("https://logistics-assist-bucket.s3.us-east-2.amazonaws.com/uploads/images/bg-globes-1710342502.3316.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -381,7 +381,7 @@ $e4-border-color: #f2f2f2;
 
   /* HEADER */
   .e4-header__title {
-    font-size: 32px !important;
+    font-size: 30px !important;
   }
   .e4-header__title img {
     width: 92px !important;
@@ -399,7 +399,7 @@ $e4-border-color: #f2f2f2;
     margin-left: auto !important;
   }
   .e4-software__img {
-    width: 158px !important;
+    width: 156px !important;
   }
   .e4-software__img-long {
     margin-right: auto !important;
@@ -423,7 +423,7 @@ $e4-border-color: #f2f2f2;
   .e4-delivery__item-tag .wrapper-inner {
     padding-top: 14px !important;
     padding-bottom: 14px !important;
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .e4-delivery__title {
     font-size: 12px !important;
@@ -489,6 +489,6 @@ $e4-border-color: #f2f2f2;
   .e4-contact__link img {
     width: 18px !important;
     height: 18px !important;
-    margin-right: 8px;
+    margin-right: 8px !important;
   }
 }

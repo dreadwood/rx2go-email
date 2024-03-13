@@ -25,27 +25,47 @@ $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
-// $white: #fefefe;
 $white: #ffffff;
 $pre-color: #ff6908;
-// $global-width: 600px;
-$global-width: 610px;
-// $global-width-small: 95%;
-// EMAIL 4
-$global-width-small: 100%;
+
+
+// EMAIL 2
+$body-background: #edf9ff;
 $global-gutter: 16px;
-$body-background: $light-gray;
-// $container-background: $white;
-// EMAIL 4
-$container-background: $white;
+$global-width: 600px;
+$global-width-small: 95%;
+$container-background: #edf9ff;
+$global-breakpoint: $global-width + $global-gutter;
+
+// EMAIL 3
+// $body-background: #edf9ff;
+// $global-gutter: 12px;
+// $global-width: 610px;
+// $global-width-small: 95%;
 // $container-background: transparent;
+// $global-breakpoint: $global-width;
+
+// EMAIL 4
+// $body-background: #edf9ff;
+// $global-gutter: 16px;
+// $global-width: 610px;
+// $global-width-small: 95%;
+// $container-background: #ffffff;
+// $global-breakpoint: $global-width;
+
+// EMAIL 5
+// $body-background: #ffffff;
+// $global-gutter: 16px;
+// $global-width: 570px;
+// $global-width-small: 95%;
+// $container-background: transparent;
+// $global-breakpoint: $global-width;
+
+
 $global-padding: 16px;
 $global-margin: 16px;
 $global-radius: 3px;
 $global-rounded: 500px;
-// $global-breakpoint: $global-width + $global-gutter;
-// EMAIL 4
-$global-breakpoint: $global-width;
 
 // 2. Grid
 // -------
