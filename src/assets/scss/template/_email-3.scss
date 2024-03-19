@@ -4,8 +4,19 @@ $e3-color-text: #162854;
 $e3-color-bg-gray: #e6e6e6;
 $e3-color-text-contact: #182b65;
 $e3-color-bg-blue-light: #29b6ff;
+$e3-color-bg-body: #edf9ff;
 
 // GENERAL
+table.e3-body {
+  width: 100%;
+  background-color: $e3-color-bg-body;
+}
+.e3-container {
+  max-width: 634px;
+  & > tbody > tr > .wrapper-inner {
+    padding: 52px 12px;
+  }
+}
 .e3-title {
   margin-bottom: 0;
   font-size: 28px;
@@ -121,6 +132,9 @@ $e3-color-bg-blue-light: #29b6ff;
 // MEDIA MOBILE (use CSS)
 @media only screen and (max-width: $global-breakpoint) {
   /* GENERAL */
+  .e3-container > tbody > tr > .wrapper-inner {
+    padding-top: 12px !important;
+  }
   .e3-wrp > tbody > tr > .wrapper-inner {
     padding-top: 40px !important;
     padding-bottom: 30px !important;

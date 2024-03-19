@@ -14,10 +14,15 @@ $e5-padding-mob: 16px;
 $e5-list-gap: 8px;
 
 // GENERAL
-body,
-html,
-.body {
-  // background: $e5-color-white !important;
+table.e5-body {
+  width: 100%;
+  background-color: $e5-color-white;
+}
+.e5-container {
+  max-width: 610px;
+  & > tbody > tr > .wrapper-inner {
+    padding: 20px;
+  }
 }
 
 // FIRST
@@ -182,6 +187,10 @@ html,
 
 // MEDIA MOBILE
 @media only screen and (max-width: $global-breakpoint) {
+  /* GENERAL */
+  .e5-container > tbody > tr > .wrapper-inner {
+    padding: 24px !important;
+  }
   /* FIRST */
   .e5-first > tbody > tr > .wrapper-inner {
     padding: $e5-padding-mob 0 !important;

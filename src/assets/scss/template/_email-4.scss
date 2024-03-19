@@ -6,9 +6,23 @@ $e4-color-bg-blue: #182b65;
 $e4-color-bg-blue-light: #29b6ff;
 $e4-color-bg-green: #8cc63f;
 $e4-color-bg-gray: #e6e6e6;
+$e4-color-bg-body: #edf9ff;
 $e4-border-color: #f2f2f2;
 
 // GENERAL
+table.e4-body {
+  width: 100%;
+  background-color: $e4-color-bg-body;
+  & > tbody > tr > td {
+    padding: 50px 26px;
+  }
+}
+.e4-container {
+  max-width: 610px;
+  & > tbody > tr > .wrapper-inner {
+    background-color: $e4-color-white;
+  }
+}
 .e4-title {
   margin-bottom: 0;
   font-size: 28px;
@@ -29,7 +43,7 @@ $e4-border-color: #f2f2f2;
   & > tbody > tr > .wrapper-inner {
     padding-top: 30px;
     padding-right: 48px;
-    padding-bottom: 74px;
+    padding-bottom: 28px;
     padding-left: 48px;
   }
 }
@@ -362,6 +376,10 @@ $e4-border-color: #f2f2f2;
 // MEDIA MOBILE
 @media only screen and (max-width: $global-breakpoint) {
   /* GENERAL */
+  table.e4-body > tbody > tr > td {
+    padding-top: 26px !important;
+    padding-bottom: 26px !important;
+  }
   .e4-wrp-top > tbody > tr > .wrapper-inner {
     padding-top: 32px !important;
     padding-right: 24px !important;
