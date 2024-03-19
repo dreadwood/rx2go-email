@@ -1,0 +1,277 @@
+// VARIABLES
+$pa-color-white: #ffffff;
+$pa-color-text: #162854;
+
+$pa-color-text-contact: #182b65;
+
+
+$pa-color-title: #24222F;
+$pa-color-gray: #827CA1;
+$pa-color-bg-blue-light: #edf8ff;
+$pa-color-bg-card: #f0f6ff;
+$pa-color-bg-table-total: #bdf3c2;
+$pa-color-bg-table-shift: #f0f6ff;
+$pa-color-bg-label-blue: #29b6ff;
+$pa-color-bg-label-green: #44d453;
+$pa-color-border-table: #ececec;
+
+// roboto
+// src/layouts/default.html
+
+// GENERAL
+table.pa-body {
+  width: 100%;
+  background-color: $pa-color-bg-blue-light;
+}
+.pa-container {
+  max-width: 600px;
+  & > tbody > tr > .wrapper-inner {
+    padding: 20px;
+  }
+}
+.pa-wrp {
+  & > tbody > tr > .wrapper-inner {
+    padding: 24px 20px 30px 20px;
+    background-color: $pa-color-white;
+  }
+}
+.pa-title {
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: $pa-color-title;
+  font-weight: 700;
+  text-transform: uppercase;
+  hyphens: none;
+}
+.pa-label-blue {
+  width: max-content;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $pa-color-white;
+  background-color: $pa-color-bg-label-blue;
+  border-radius: 41px;
+}
+.pa-label-green {
+  padding: 4px 8px;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+  color: $pa-color-white;
+  background-color: $pa-color-bg-label-green;
+  border-radius: 41px;
+}
+
+// INFO
+.pa-info__row.collapse {
+  & > tbody > tr > .columns.pa-info__col {
+    padding-bottom: 0;
+    &.first {
+      padding-right: 5px;
+    }
+    &.last {
+      padding-left: 5px;
+    }
+  }
+}
+.columns.pa-info__col {
+  & > table > tbody > tr > th {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 130%;
+    background-color: $pa-color-bg-card;
+    border-radius: 10px;
+  }
+}
+
+// CARD PAYMENT
+.pa-card-payment {
+  .wrapper-inner {
+    padding: 10px;
+    background-color: $pa-color-bg-card;
+    border-radius: 10px;
+  }
+}
+.pa-card-payment__title {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+.pa-card-payment__date {
+  float: right;
+  font-size: 12px;
+  line-height: 120%;
+  color: $pa-color-gray;
+  b {
+    color: $pa-color-title;
+  }
+}
+
+// CARD
+.pa-card {
+  & > tbody > tr > .wrapper-inner {
+    padding: 0;
+    border-radius: 10px;
+    background-color: $pa-color-bg-card;
+  }
+}
+.pa-card__head {
+  & > tbody > tr > .wrapper-inner {
+    padding: 10px;
+  }
+}
+
+// TABLE PAYMENT
+.pa-table-payment {
+  width: 100%;
+  background-color: $pa-color-white;
+  border-radius: 5px;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+.pa-table-payment__row {
+  border-top: 1px solid $pa-color-border-table;
+  &--first {
+    border-top: 0;
+  }
+}
+.pa-table-payment__total {
+  background-color: $pa-color-bg-table-total;
+}
+.pa-table-payment__row-td,
+.pa-table-payment__row-last {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 120%;
+}
+.pa-table-payment__row-last,
+.pa-table-payment__total-last {
+  text-align: right;
+}
+.pa-table-payment__total-td,
+.pa-table-payment__total-last {
+  padding: 9px 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+// TABLE
+.pa-table {
+  width: 100%;
+  background-color: $pa-color-white;
+  border-radius: 5px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+.pa-table__head {
+  th {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    vertical-align: middle;
+    border-right: 1px solid $pa-color-border-table;
+  }
+  .center {
+    text-align: center;
+  }
+  .first {
+    border-left: 1px solid $pa-color-bg-card;
+  }
+  .last {
+    border-right: 1px solid $pa-color-bg-card;
+  }
+}
+.pa-table__body {
+  tr {
+    border-top: 1px solid $pa-color-border-table;
+    &:nth-child(2n) {
+      background-color: $pa-color-bg-table-shift;
+    }
+  }
+  td {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    vertical-align: middle;
+    border-right: 1px solid $pa-color-border-table;
+  }
+  .center {
+    text-align: center;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  .first {
+    border-left: 1px solid $pa-color-bg-card;
+  }
+  .last {
+    border-right: 1px solid $pa-color-bg-card;
+  }
+}
+.pa-table__total {
+  // background-color: $pa-color-bg-table-total;
+  td {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    text-align: right;
+    vertical-align: middle;
+    border: 1px solid $pa-color-bg-table-total;
+    border-top: 0;
+    background-color: $pa-color-bg-table-total;
+  }
+}
+.pa-table__foot {
+  background-color: $pa-color-bg-table-total;
+  td {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    text-align: right;
+    vertical-align: middle;
+    border: 1px solid $pa-color-bg-table-total;
+    border-top: 0;
+  }
+}
+
+// MEDIA MOBILE
+@media only screen and (max-width: $global-breakpoint) {
+  /* GENERAL */
+
+  /* INFO */
+  .pa-info__row.collapse > tbody > tr > .columns.pa-info__col.first {
+    padding-right: 4px !important;
+  }
+  .pa-info__row.collapse > tbody > tr > .columns.pa-info__col.last {
+    padding-left: 4px !important;
+  }
+  .columns.pa-info__col > table > tbody > tr > th {
+    padding: 8px !important;
+  }
+
+  /* CARD PAYMENT */
+  .pa-card-payment__date {
+    display: block !important;
+    float: none !important;
+    padding-top: 8px !important;
+  }
+
+  /* TABLE */
+  .pa-table__head th {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    font-size: 12px!important;
+    line-height: 14px!important;
+  }
+  .pa-table__body td {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+}
