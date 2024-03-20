@@ -1,0 +1,182 @@
+// VARIABLES
+$ir-color-white: #ffffff;
+$ir-color-bg-body: #edf8ff;
+$ir-color-title: #44d453;
+$ir-color-text: #24222f;
+$ir-color-contact: #162854;
+
+$ir-color-bg-label-blue: #29b6ff;
+$ir-color-bg-label-green: #44d453;
+
+// roboto
+// src/layouts/default.html
+
+// GENERAL
+table.ir-body {
+  width: 100%;
+  background-color: $ir-color-bg-body;
+}
+.ir-container {
+  max-width: 640px;
+  & > tbody > tr > .wrapper-inner {
+    padding: 32px 20px;
+  }
+}
+.ir-wrp {
+  & > tbody > tr > .wrapper-inner {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 130%;
+    color: $ir-color-text;
+    background-color: $ir-color-white;
+    border-radius: 20px;
+  }
+}
+.ir-logo {
+  display: block;
+  width: 100px !important;
+  height: 25px !important;
+}
+.ir-label-blue {
+  width: max-content;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $ir-color-white;
+  background-color: $ir-color-bg-label-blue;
+  border-radius: 41px;
+}
+.ir-label-green {
+  width: max-content;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $ir-color-white;
+  background-color: $ir-color-bg-label-green;
+  border-radius: 41px;
+}
+
+// INFO
+.ir-info__row.collapse {
+  & > tbody > tr > .columns.ir-info__col {
+    padding-bottom: 0;
+    &.first {
+      padding-right: 10px;
+      th {
+        background-image: url("https://logistics-assist-bucket.s3.us-east-2.amazonaws.com/uploads/images/mail-logo-1708617349.091.png");
+        background-repeat: no-repeat;
+        background-size: 116px auto;
+        background-position: top 10px right 10px;
+      }
+    }
+    &.last {
+      th {
+        background-image: url("https://logistics-assist-bucket.s3.us-east-2.amazonaws.com/uploads/images/handshake-1710937537.8693.png");
+        background-repeat: no-repeat;
+        background-size: 53px auto;
+        background-position: top 12px right 12px;
+      }
+    }
+  }
+}
+.columns.ir-info__col {
+  & > table > tbody > tr > th {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 130%;
+    background-color: $pa-color-bg-card;
+    border-radius: 10px;
+  }
+}
+.ir-info__data {
+  min-height: 140px;
+  vertical-align: bottom;
+}
+.ir-info__content {
+  width: 100%;
+}
+
+// CONTENT
+.ir-title {
+  margin-bottom: 0;
+  font-size: 26px;
+  line-height: 120%;
+  font-weight: 700;
+  color: $ir-color-title;
+  text-transform: uppercase;
+}
+.ir-hello {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+}
+.ir-price-wrp {
+  color: transparentize($ir-color-text, 0.5)
+}
+.ir-price {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $ir-color-text;
+}
+
+// CONTACT
+.ir-contact {
+  .wrapper-inner {
+    color: $ir-color-contact;
+  }
+}
+.ir-contact__title {
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 140%;
+  font-weight: 700;
+  text-align: center;
+}
+.ir-contact__link {
+  display: block;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  color: $ir-color-contact;
+  &:hover,
+  &:visited {
+    color: $ir-color-contact;
+  }
+  img {
+    display: inline;
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+}
+.ir-contact__copyright {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: transparentize($ir-color-contact, 0.6)
+}
+
+// MEDIA MOBILE
+@media only screen and (max-width: $global-breakpoint) {
+  /* GENERAL */
+  .ir-wrp > tbody > tr > .wrapper-inner {
+    padding-top: 10px !important;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+
+  /* INFO */
+  .ir-info__row > tbody > tr > .ir-info__col.first {
+    padding-bottom: 8px !important;
+  }
+
+  /* CONTENT */
+  .ir-title {
+    font-size: 20px !important;
+    line-height: 23px !important;
+  }
+}

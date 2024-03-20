@@ -1,10 +1,5 @@
 // VARIABLES
 $pa-color-white: #ffffff;
-$pa-color-text: #162854;
-
-$pa-color-text-contact: #182b65;
-
-
 $pa-color-title: #24222F;
 $pa-color-gray: #827CA1;
 $pa-color-bg-blue-light: #edf8ff;
@@ -24,9 +19,9 @@ table.pa-body {
   background-color: $pa-color-bg-blue-light;
 }
 .pa-container {
-  max-width: 600px;
+  max-width: 640px;
   & > tbody > tr > .wrapper-inner {
-    padding: 20px;
+    padding: 32px 20px;
   }
 }
 .pa-wrp {
@@ -34,6 +29,11 @@ table.pa-body {
     padding: 24px 20px 30px 20px;
     background-color: $pa-color-white;
   }
+}
+.pa-logo {
+  display: block;
+  width: 100px !important;
+  height: 25px !important;
 }
 .pa-title {
   margin-bottom: 0;
@@ -214,7 +214,6 @@ table.pa-body {
   }
 }
 .pa-table__total {
-  // background-color: $pa-color-bg-table-total;
   td {
     padding: 10px;
     font-size: 12px;
@@ -244,6 +243,10 @@ table.pa-body {
 // MEDIA MOBILE
 @media only screen and (max-width: $global-breakpoint) {
   /* GENERAL */
+  .pa-container  > tbody > tr > .wrapper-inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
   /* INFO */
   .pa-info__row.collapse > tbody > tr > .columns.pa-info__col.first {
