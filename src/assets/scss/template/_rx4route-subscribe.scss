@@ -1,0 +1,180 @@
+// VARIABLES
+$rx4sr-color-white: #ffffff;
+$rx4sr-color-bg-body: #edf1ff;
+$rx4sr-color-text: #171717;
+$rx4sr-color-contact: #162854;
+$rx4sr-color-bg-btn: #000080;
+
+// roboto
+// src/layouts/default.html
+
+// GENERAL
+table.rx4sr-body {
+  width: 100%;
+  background-color: $rx4sr-color-bg-body;
+}
+.rx4sr-container {
+  max-width: 640px;
+  & > tbody > tr > .wrapper-inner {
+    padding: 30px 20px 30px 20px;
+  }
+}
+.rx4sr-wrp {
+  & > tbody > tr > .wrapper-inner {
+    padding: 30px 18px;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: $rx4sr-color-text;
+    background-color: $rx4sr-color-white;
+    border-radius: 20px;
+  }
+}
+.rx4sr-logo {
+  display: block;
+  width: 150px;
+  height: 28px;
+}
+.rx4sr-title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  font-weight: 700;
+}
+.rx4sr-btn {
+  display: block;
+  padding: 15px 30px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: $rx4sr-color-white;
+  background-color: $rx4sr-color-bg-btn;
+  border-radius: 30px;
+  &:hover,
+  &:visited {
+    color: $rx4sr-color-white;
+  }
+}
+.rx4sr-subscription {
+  font-size: 16px;
+  line-height: 130%;
+}
+
+// CARD
+.rx4sr-card-border {
+  border: 1px solid transparentize($rx4sr-color-text, 0.9);
+  border-radius: 20px;
+}
+.rx4sr-card {
+  font-size: 16px;
+  line-height: 130%;
+  & > tbody > tr > .wrapper-inner {
+    padding: 30px 60px;
+  }
+}
+.rx4sr-card__title {
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 700;
+  text-align: center;
+}
+
+// TABLE
+.rx4sr-table {
+  width: 100%;
+  td {
+    padding-top: 24px;
+    font-size: 18px;
+    line-height: 130%;
+  }
+}
+.rx4sr-table__value {
+  text-align: right;
+  font-weight: 700;
+}
+.rx4sr-table__price {
+  font-size: 14px;
+  line-height: 130%;
+  text-align: right;
+  font-weight: 400;
+  b {
+    font-size: 18px;
+  }
+}
+.rx4sr-card__subscription {
+  font-size: 16px;
+  line-height: 130%;
+  color: transparentize($rx4sr-color-text, 0.4);
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+// CONTACT
+.rx4sr-contact {
+  .wrapper-inner {
+    color: $rx4sr-color-contact;
+  }
+}
+.rx4sr-contact__title {
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 140%;
+  font-weight: 700;
+  text-align: center;
+}
+.rx4sr-contact__link {
+  display: block;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  color: $rx4sr-color-contact;
+  &:hover,
+  &:visited {
+    color: $rx4sr-color-contact;
+  }
+  img {
+    display: inline;
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+}
+.rx4sr-contact__copyright {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: transparentize($rx4sr-color-contact, 0.6)
+}
+
+// MEDIA MOBILE
+@media only screen and (max-width: $global-breakpoint) {
+  /* GENERAL */
+  .rx4sr-wrp > tbody > tr > .wrapper-inner {
+    padding: 24px 12px !important;
+    font-size: 16px !important;
+  }
+  .rx4sr-title {
+    font-size: 20px !important;
+  }
+  /* CARD */
+  .rx4sr-card > tbody > tr > .wrapper-inner {
+    padding: 20px !important;
+  }
+  .rx4sr-card__title {
+    font-size: 18px !important;
+  }
+  /* TABLE */
+  .rx4sr-table td {
+    padding-top: 16px !important;
+    font-size: 16px !important;
+  }
+  .rx4sr-table__price b {
+    font-size: 16px !important;
+  }
+}
