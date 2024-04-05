@@ -36,7 +36,7 @@ table.rx4sr-body {
   height: 28px;
 }
 .rx4sr-title {
-  margin: 0;
+  margin: 0 !important;
   font-size: 22px;
   line-height: 130%;
   text-align: center;
@@ -57,10 +57,6 @@ table.rx4sr-body {
   &:visited {
     color: $rx4sr-color-white;
   }
-}
-.rx4sr-subscription {
-  font-size: 16px;
-  line-height: 130%;
 }
 
 // CARD

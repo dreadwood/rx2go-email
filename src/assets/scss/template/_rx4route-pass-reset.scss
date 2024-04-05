@@ -1,0 +1,128 @@
+// VARIABLES
+$rx4pr-color-white: #ffffff;
+$rx4pr-color-bg-body: #edf1ff;
+$rx4pr-color-text: #171717;
+$rx4pr-color-contact: #162854;
+$rx4pr-color-bg-btn: #000080;
+
+// roboto
+// src/layouts/default.html
+
+// GENERAL
+table.rx4pr-body {
+  width: 100%;
+  background-color: $rx4pr-color-bg-body;
+}
+.rx4pr-container {
+  max-width: 640px;
+  & > tbody > tr > .wrapper-inner {
+    padding: 30px 20px 30px 20px;
+  }
+}
+.rx4pr-wrp {
+  & > tbody > tr > .wrapper-inner {
+    padding: 30px 18px;
+    background-color: $rx4pr-color-white;
+    border-radius: 20px;
+  }
+}
+.rx4pr-logo {
+  display: block;
+  width: 150px;
+  height: 28px;
+}
+.rx4pr-img {
+  display: block;
+  width: 211px;
+  height: 155px;
+}
+.rx4pr-content {
+  & > tbody > tr > .wrapper-inner {
+    padding: 24px 70px; // 16
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: $rx4pr-color-text;
+  }
+}
+.rx4pr-title {
+  margin: 0 !important;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  font-weight: 700;
+}
+.rx4pr-btn {
+  display: block;
+  padding: 15px 30px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: $rx4pr-color-white;
+  background-color: $rx4pr-color-bg-btn;
+  border-radius: 30px;
+  &:hover,
+  &:visited {
+    color: $rx4pr-color-white;
+  }
+}
+
+// CONTACT
+.rx4pr-contact {
+  .wrapper-inner {
+    color: $rx4pr-color-contact;
+  }
+}
+.rx4pr-contact__title {
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 140%;
+  font-weight: 700;
+  text-align: center;
+}
+.rx4pr-contact__link {
+  display: block;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  color: $rx4pr-color-contact;
+  &:hover,
+  &:visited {
+    color: $rx4pr-color-contact;
+  }
+  img {
+    display: inline;
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+}
+.rx4pr-contact__copyright {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: transparentize($rx4pr-color-contact, 0.6)
+}
+
+// MEDIA MOBILE
+@media only screen and (max-width: $global-breakpoint) {
+  /* GENERAL */
+  .rx4pr-wrp > tbody > tr > .wrapper-inner {
+    padding: 24px 12px !important;
+    font-size: 16px !important;
+  }
+  .rx4pr-img {
+    width: 108px !important;
+    height: 80px !important;
+  }
+  .rx4pr-content  > tbody > tr > .wrapper-inner {
+    padding: 16px 20px !important;
+    font-size: 16px !important;
+  }
+  .rx4pr-title {
+    font-size: 20px !important;
+  }
+}
