@@ -1,0 +1,141 @@
+// VARIABLES
+$rx4ve-color-white: #ffffff;
+$rx4ve-color-bg-body: #edf1ff;
+$rx4ve-color-text: #171717;
+$rx4ve-color-contact: #162854;
+$rx4ve-color-bg-btn: #000080;
+
+// roboto
+// src/layouts/default.html
+
+// GENERAL
+table.rx4ve-body {
+  width: 100%;
+  background-color: $rx4ve-color-bg-body;
+}
+.rx4ve-container {
+  max-width: 640px;
+  & > tbody > tr > .wrapper-inner {
+    padding: 30px 20px 30px 20px;
+  }
+}
+.rx4ve-wrp {
+  & > tbody > tr > .wrapper-inner {
+    padding: 30px 18px;
+    background-color: $rx4ve-color-white;
+    border-radius: 20px;
+  }
+}
+.rx4ve-logo {
+  display: block;
+  width: 150px;
+  height: 28px;
+}
+.rx4ve-img {
+  display: block;
+  width: 159px;
+  height: 155px;
+}
+.rx4ve-content {
+  & > tbody > tr > .wrapper-inner {
+    padding-right: 70px;
+    padding-left: 70px;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: $rx4ve-color-text;
+  }
+}
+.rx4ve-title {
+  margin: 0 !important;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  font-weight: 700;
+}
+.rx4ve-btn {
+  display: block;
+  padding: 15px 30px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: $rx4ve-color-white;
+  background-color: $rx4ve-color-bg-btn;
+  border-radius: 30px;
+  &:hover,
+  &:visited {
+    color: $rx4ve-color-white;
+  }
+}
+.rx4ve-code {
+  & > tbody > tr > .wrapper-inner {
+    padding: 12px 20px;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 700;
+    background-color: $rx4ve-color-bg-body;
+    border-radius: 10px;
+  }
+}
+
+// CONTACT
+.rx4ve-contact {
+  .wrapper-inner {
+    color: $rx4ve-color-contact;
+  }
+}
+.rx4ve-contact__title {
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 140%;
+  font-weight: 700;
+  text-align: center;
+}
+.rx4ve-contact__link {
+  display: block;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  color: $rx4ve-color-contact;
+  &:hover,
+  &:visited {
+    color: $rx4ve-color-contact;
+  }
+  img {
+    display: inline;
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+}
+.rx4ve-contact__copyright {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: transparentize($rx4ve-color-contact, 0.6)
+}
+
+// MEDIA MOBILE
+@media only screen and (max-width: $global-breakpoint) {
+  /* GENERAL */
+  .rx4ve-wrp > tbody > tr > .wrapper-inner {
+    padding: 24px 12px !important;
+    font-size: 16px !important;
+  }
+  .rx4ve-img {
+    width: 110px !important;
+    height: 108px !important;
+  }
+  .rx4ve-content  > tbody > tr > .wrapper-inner {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    font-size: 16px !important;
+  }
+  .rx4ve-title {
+    font-size: 20px !important;
+  }
+}
