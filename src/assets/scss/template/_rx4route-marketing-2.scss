@@ -1,0 +1,256 @@
+// VARIABLES
+$rx4m-color-white: #ffffff;
+$rx4m-color-accent: #e80045;
+$rx4m-color-text: #000080;
+$rx4m-color-bg-body: #e9f0fe;
+$rx4m-color-bg-btn: #000080;
+$rx4m-color-bg-contact: #04017F;
+
+// poppins
+// src/layouts/default.html
+// rx4m
+
+// GENERAL
+table.rx4m-body {
+  width: 100%;
+  color: $rx4m-color-text;
+  background-color: $rx4m-color-bg-body;
+}
+.rx4m-container {
+  max-width: 640px;
+  & > tbody > tr > .wrapper-inner {
+    padding: 30px 20px 30px 20px;
+  }
+}
+
+// HEADER
+.rx4m-header {
+  width: 100%;
+  border-collapse: collapse;
+}
+.rx4m-header__col {
+  vertical-align: middle;
+  width: 50%;
+  padding: 0;
+}
+.rx4m-header__logo {
+  display: block;
+  width: 165px;
+}
+.rx4m-header__btn {
+  display: block;
+  margin-left: auto;
+  width: max-content;
+  padding: 12px 30px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: $rx4m-color-white;
+  background-color: $rx4m-color-bg-btn;
+  border-radius: 60px;
+  box-sizing: border-box;
+  &:hover,
+  &:visited {
+    color: $rx4m-color-white;
+  }
+}
+
+// PROMO
+.rx4m-promo {
+  .wrapper-inner {
+    padding: 24px 40px 0 40px;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: $rx4m-color-text;
+    background-color: $rx4m-color-white;
+    border-radius: 40px;
+  }
+}
+.rx4m-promo__title {
+  margin: 0;
+  font-size: 35px;
+  line-height: 100%;
+  font-weight: 600;
+  text-align: center;
+  color: $rx4m-color-text;
+  span {
+    color: $rx4m-color-accent;
+  }
+}
+.rx4m-promo__img {
+  display: block;
+  margin: 0 auto;
+  width: 410px;
+  height: auto;
+}
+
+// SOFTWARE
+.rx4m-soft {
+  .wrapper-inner {
+    padding: 16px 20px;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: $rx4m-color-text;
+  }
+}
+.rx4m-soft__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 600;
+  text-align: center;
+  color: $rx4m-color-text;
+  span {
+    color: $rx4m-color-accent;
+  }
+}
+.rx4m-soft__logo {
+  float: left;
+  margin: 1px;
+  width: 108px;
+}
+.rx4m-soft__clearfix {
+  display: table;
+  clear: both;
+}
+.rx4m-soft__list-item {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 120%;
+  img {
+    display: inline;
+  }
+}
+
+// PLATFORM
+.rx4m-platform__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 600;
+  text-align: center;
+  color: $rx4m-color-text;
+  span {
+    color: $rx4m-color-accent;
+  }
+}
+.rx4m-platform__card {
+  .wrapper-inner {
+    padding: 20px 55px 0 55px;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: $rx4m-color-text;
+    background-color: $rx4m-color-white;
+    border-radius: 30px;
+  }
+}
+.rx4m-platform__card-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 600;
+  text-align: center;
+  color: $rx4m-color-accent;
+}
+.rx4m-platform__img {
+  display: block;
+  margin: 0 auto;
+  width: 490px;
+}
+
+// CONTACT
+.rx4m-contact {
+  .wrapper-inner {
+    padding: 30px 20px;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: left;
+    color: $rx4m-color-white;
+    background-color: $rx4m-color-bg-contact;
+    border-radius: 30px;
+  }
+}
+.rx4m-contact__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 120%;
+  font-weight: 600;
+  text-align: left;
+}
+.rx4m-contact__item {
+  display: block;
+  margin: 0;
+  color: $rx4m-color-white;
+  &:hover,
+  &:visited {
+    color: $rx4m-color-white;
+  }
+}
+.rx4m-contact__btn {
+  display: block;
+  padding: 15px 20px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: $rx4m-color-white;
+  background-color: $rx4m-color-accent;
+  border-radius: 10px;
+  &:hover,
+  &:visited {
+    color: $rx4m-color-white;
+  }
+}
+
+// MEDIA MOBILE
+@media only screen and (max-width: $global-breakpoint) {
+  /* GENERAL */
+  .rx4m-container > tbody > tr > .wrapper-inner {
+    padding: 16px 12px !important;
+  }
+  /* HEADER */
+  .rx4m-header__logo {
+    width: 165px !important;
+  }
+  .rx4m-header__btn {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+  }
+  /* PROMO */
+  .rx4m-promo .wrapper-inner {
+    padding: 24px 18px 0 18px !important;
+  }
+  /* SOFT */
+  .rx4m-soft .wrapper-inner {
+    padding: 20px 0 35px 0 !important;
+    font-size: 18px !important;
+  }
+  .rx4m-soft__title {
+    font-size: 36px !important;
+  }
+  .rx4m-soft__logo {
+    width: 170px !important;
+  }
+  .rx4m-soft__list-item {
+    font-size: 18px !important;
+  }
+  .rx4m-soft__list-item img {
+    width: 14px !important;
+    height: 11px !important;
+  }
+  /* PLATFORM */
+  .rx4m-platform__card .wrapper-inner {
+    padding: 20px 14px 0 14px !important;
+  }
+  /* CONTACT */
+  .rx4m-contact .wrapper-inner {
+    padding-bottom: 20px !important;
+    font-size: 18px !important;
+  }
+}
