@@ -117,10 +117,26 @@ table.rx2e6-body {
   }
 }
 .rx2e6-soft__logo {
+  position: relative;
   float: left;
   margin: 1px;
   width: 118px;
   height: 60px;
+  &.premium::before {
+    content: "PREMIUM";
+    position: absolute;
+    top: -7px;
+    left: 26px;
+    display: block;
+    width: max-content;
+    padding: 0 11px;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    color: $rx2e6-color-white;
+    background-color: $rx2e6-color-accent;
+    border-radius: 34px;
+  }
 }
 .rx2e6-soft__clearfix {
   display: table;
@@ -274,6 +290,14 @@ table.rx2e6-body {
   /* HEADER */
   .rx2e6-header__logo {
     width: 125px !important;
+  }
+  .rx2e6-soft__logo.premium::before {
+    top: -7px !important;
+    left: 32px !important;
+    padding: 0 13px !important;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    border-radius: 40px !important;
   }
   .rx2e6-header__btn {
     font-size: 14px !important;
