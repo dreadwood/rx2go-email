@@ -1,0 +1,322 @@
+// VARIABLES
+$rx2e6-color-white: #ffffff;
+$rx2e6-color-accent: #2C7EF8;
+$rx2e6-color-text: #162854;
+$rx2e6-color-promo-text: #32394E;
+$rx2e6-color-bg-body: #edf8ff;
+$rx2e6-color-bg-btn: #29B6FF;
+$rx2e6-color-bg-contact: #030A32;
+
+
+// Inter
+// src/layouts/default.html
+
+// rx2e6
+
+// GENERAL
+table.rx2e6-body {
+  width: 100%;
+  color: $rx2e6-color-text;
+  background-color: $rx2e6-color-bg-body;
+}
+.rx2e6-container {
+  max-width: 640px;
+  & > tbody > tr > .wrapper-inner {
+    padding: 30px 20px 30px 20px;
+  }
+}
+
+// HEADER
+.rx2e6-header {
+  width: 100%;
+  border-collapse: collapse;
+}
+.rx2e6-header__col {
+  vertical-align: middle;
+  width: 50%;
+  padding: 0;
+}
+.rx2e6-header__logo {
+  display: block;
+  width: 116px;
+}
+.rx2e6-header__btn {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  padding: 10px 30px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: $rx2e6-color-white;
+  background-color: $rx2e6-color-bg-btn;
+  border-radius: 60px;
+  box-sizing: border-box;
+  &:hover,
+  &:visited {
+    color: $rx2e6-color-white;
+  }
+}
+
+// PROMO
+.rx2e6-promo {
+  padding-bottom: 6px;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: $rx2e6-color-promo-text;
+}
+.rx2e6-promo__title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 110%;
+  font-weight: 700;
+  text-align: center;
+  color: $rx2e6-color-text;
+  word-break: normal;
+}
+.rx2e6-promo__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.rx2e6-promo__label {
+  width: max-content;
+  margin: 0 auto;
+  padding: 3px 14px;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  background-color: $rx2e6-color-accent;
+  color: $rx2e6-color-white;
+  border-radius: 10px;
+  b {
+    font-weight: 800;
+  }
+}
+
+// SOFTWARE
+.rx2e6-soft  {
+  .wrapper-inner {
+    font-size: 16px;
+    line-height: 130%;
+    color: $rx2e6-color-text;
+  }
+}
+.rx2e6-soft__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 600;
+  text-align: center;
+  color: $rx2e6-color-text;
+  span {
+    color: $rx2e6-color-accent;
+  }
+}
+.rx2e6-soft__logo {
+  float: left;
+  margin: 1px;
+  width: 118px;
+  height: 60px;
+}
+.rx2e6-soft__clearfix {
+  display: table;
+  clear: both;
+}
+.rx2e6-soft__list-item {
+  margin-top: 10px;
+  span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: $rx2e6-color-accent;
+    border-radius: 50%;
+  }
+}
+
+// OFFERS
+.rx2e6-offers__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 700;
+  color: $rx2e6-color-text;
+}
+.rx2e6-offers__card {
+  .wrapper-inner {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 130%;
+    color: $rx2e6-color-text;
+    padding: 20px;
+    background-color: $rx2e6-color-white;
+    border-radius: 20px;
+  }
+}
+.rx2e6-offers__card-title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 600;
+  color: $rx2e6-color-accent;
+}
+.rx2e6-offers__img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+// STEPS
+.rx2e6-steps__title {
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 700;
+}
+.rx2e6-steps__card {
+  .wrapper-inner {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 140%;
+    color: $rx2e6-color-text;
+    word-break: normal;
+    hyphens: none;
+    background-color: $rx2e6-color-white;
+    border-radius: 20px;
+  }
+}
+.rx2e6-steps__card-suptitle {
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 600;
+  color: $rx2e6-color-accent;
+}
+.rx2e6-steps__card-title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 120%;
+  font-weight: 700;
+}
+.rx2e6-steps__img {
+  img {
+    width: 100%;
+  }
+}
+.rx2e6-steps__grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+.rx2e6-steps__grid-col {
+  width: 50%;
+  padding: 0;
+  &.left {
+    padding-right: 6px;
+  }
+  &.right {
+    padding-left: 6px;
+  }
+}
+
+// CONTACT
+.rx2e6-contact {
+  .wrapper-inner {
+    padding: 30px 20px;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: left;
+    color: $rx2e6-color-white;
+    background-color: $rx2e6-color-bg-contact;
+    border-radius: 30px;
+  }
+}
+.rx2e6-contact__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 120%;
+  font-weight: 700;
+  text-align: left;
+}
+.rx2e6-contact__item {
+  display: block;
+  margin: 0;
+  color: $rx2e6-color-white;
+  &:hover,
+  &:visited {
+    color: $rx2e6-color-white;
+  }
+}
+.rx2e6-contact__btn {
+  display: block;
+  padding: 15px 20px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: $rx2e6-color-white;
+  background-color: $rx2e6-color-accent;
+  border-radius: 10px;
+  &:hover,
+  &:visited {
+    color: $rx2e6-color-white;
+  }
+}
+
+// MEDIA MOBILE
+@media only screen and (max-width: $global-breakpoint) {
+  /* GENERAL */
+  .rx2e6-container > tbody > tr > .wrapper-inner {
+    padding: 16px 12px !important;
+  }
+  /* HEADER */
+  .rx2e6-header__logo {
+    width: 125px !important;
+  }
+  .rx2e6-header__btn {
+    font-size: 14px !important;
+  }
+  /* SOFT */
+  .rx2e6-soft .wrapper-inner {
+    padding: 20px !important;
+    background-color: $rx2e6-color-white !important;
+    border-radius: 24px !important;
+  }
+  .rx2e6-soft__title {
+    line-height: 100% !important;
+  }
+  .rx2e6-soft__logo {
+    width: 144px !important;
+    height: 74px !important;
+  }
+  /* OFFERS */
+  .rx2e6-offers__card .wrapper-inner {
+    font-size: 18px !important;
+  }
+  .rx2e6-offers__card-title {
+    font-size: 22px !important;
+    line-height: 25px !important;
+  }
+  /* STEPS */
+  .rx2e6-steps__card .wrapper-inner {
+    font-size: 18px !important;
+  }
+  .rx2e6-steps__grid-col {
+    display: block !important;
+    width: 100% !important;
+  }
+  .rx2e6-steps__grid-col.left {
+    margin-bottom: 12px;
+    padding: 0;
+  }
+  .rx2e6-steps__grid-col.right {
+    padding: 0;
+  }
+  /* CONTACT */
+  .rx2e6-contact__btn {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
