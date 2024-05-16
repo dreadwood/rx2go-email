@@ -108,24 +108,18 @@ table.rx4m3-body {
   }
 }
 .rx4m3-soft__logo {
-  position: relative;
+  padding-top: 8px;
   float: left;
-  margin: 1px;
+  margin: 0 1px;
   width: 108px;
-  &.premium::before {
-    content: "PREMIUM";
-    position: absolute;
-    top: -7px;
-    left: 20px;
-    display: block;
-    width: max-content;
-    padding: 0 11px;
-    font-size: 10px;
-    line-height: 18px;
-    text-align: center;
-    color: $rx4m3-color-white;
-    background-color: $rx4m3-color-accent;
-    border-radius: 34px;
+  height: 55px;
+  box-sizing: border-box;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  &.premium {
+    padding-top: 0;
   }
 }
 .rx4m3-soft__clearfix {
@@ -253,15 +247,12 @@ table.rx4m3-body {
     font-size: 36px !important;
   }
   .rx4m3-soft__logo {
+    padding-top: 14px !important;
     width: 170px !important;
+    height: 86px !important;
   }
-  .rx4m3-soft__logo.premium::before {
-    top: -7px !important;
-    left: 44px !important;
-    padding: 0 13px !important;
-    font-size: 12px !important;
-    line-height: 20px !important;
-    border-radius: 40px !important;
+  .rx4m3-soft__logo.premium {
+    padding-top: 0 !important;
   }
   .rx4m3-soft__list-item {
     font-size: 18px !important;
