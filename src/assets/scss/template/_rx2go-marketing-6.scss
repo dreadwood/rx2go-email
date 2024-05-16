@@ -181,9 +181,9 @@ table.rx2e6-body {
   color: $rx2e6-color-accent;
 }
 .rx2e6-offers__img {
-  max-width: 600px;
-  width: 100%;
-  height: auto;
+  img {
+    height: auto;
+  }
 }
 
 // STEPS
@@ -291,14 +291,6 @@ table.rx2e6-body {
   .rx2e6-header__logo {
     width: 125px !important;
   }
-  .rx2e6-soft__logo.premium::before {
-    top: -7px !important;
-    left: 32px !important;
-    padding: 0 13px !important;
-    font-size: 12px !important;
-    line-height: 20px !important;
-    border-radius: 40px !important;
-  }
   .rx2e6-header__btn {
     font-size: 14px !important;
   }
@@ -314,6 +306,14 @@ table.rx2e6-body {
   .rx2e6-soft__logo {
     width: 144px !important;
     height: 74px !important;
+  }
+  .rx2e6-soft__logo.premium::before {
+    top: -7px !important;
+    left: 32px !important;
+    padding: 0 13px !important;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    border-radius: 40px !important;
   }
   /* OFFERS */
   .rx2e6-offers__card .wrapper-inner {
